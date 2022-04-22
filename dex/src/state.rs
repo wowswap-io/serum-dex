@@ -1348,7 +1348,7 @@ impl EventView {
 
 #[derive(Copy, Clone)]
 #[repr(packed)]
-struct OrderBookStateHeader {
+pub struct OrderBookStateHeader {
     account_flags: u64, // Initialized, (Bids or Asks)
 }
 unsafe impl Zeroable for OrderBookStateHeader {}
